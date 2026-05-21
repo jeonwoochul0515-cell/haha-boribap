@@ -1,0 +1,224 @@
+// 하하보리밥 사이트 전역 데이터 - 브랜드 정보, 매장, 메뉴, 리뷰, 네이버 통계
+export const brand = {
+  name: '하하보리밥',
+  tagline: '엄마의 손길 그대로',
+  conceptLine: '만원에 가장 푸짐하고 행복한 한상',
+  description:
+    '자연에서 온 신선한 나물과 갓 지은 보리밥, 따끈한 청국장과 갈치구이까지. 정성껏 차려낸 한상으로 마음까지 든든해지는 자리.',
+  kakaoChannel: 'https://pf.kakao.com/_haha_boribap',
+  aiSummary: '대기할 만한 가치가 있는 보리밥 명소',
+}
+
+export const stats = {
+  rating: 4.53,
+  ratingCount: 306,
+  visitorReviews: 1376,
+  blogReviews: 310,
+}
+
+export const keywordChart = [
+  { label: '음식이 맛있어요', count: 788 },
+  { label: '가성비가 좋아요', count: 414 },
+  { label: '재료가 신선해요', count: 407 },
+  { label: '양이 많아요', count: 259 },
+  { label: '친절해요', count: 210 },
+]
+
+export const stores = [
+  {
+    id: 'yangsan',
+    badge: '본점',
+    name: '하하보리밥 양산물금점',
+    address: '경상남도 양산시 물금읍 버들3길 8-1, 1층',
+    phone: '055-381-0316',
+    phoneLink: 'tel:055-381-0316',
+    hours: [
+      { label: '매일', time: '11:00 – 20:00' },
+      { label: '평일 브레이크', time: '15:00 – 17:00' },
+      { label: '라스트오더', time: '19:30' },
+    ],
+    perks: ['본관+별관 운영', '무료 전용 주차장', '휠체어 출입 가능', '셀프코너', '아기의자', '숭늉 무한 리필', '연중무휴'],
+    note: '물금역 인근 · 황산공원에서 차로 5분 · 본관 옆 별관으로 회전율 ↑',
+    naverMap: 'https://map.naver.com/p/search/하하보리밥/place/1286468907',
+  },
+  {
+    id: 'ulsan',
+    badge: '가맹 1호점',
+    name: '하하보리밥 울산성안점',
+    address: '울산광역시 중구 함월22길 8, 1층',
+    phone: '0507-1444-2283',
+    phoneLink: 'tel:0507-1444-2283',
+    hours: [
+      { label: '평일·주말', time: '11:00 – 20:00' },
+      { label: '평일 브레이크', time: '14:30 – 17:00' },
+      { label: '주말 브레이크', time: '14:30 – 15:30' },
+      { label: '수요일', time: '11:00 – 15:00' },
+    ],
+    perks: ['주차 가능', '단체석', '깔끔한 매장', '숭늉 무한 리필'],
+    note: '지역 주민이 사랑하는 단골 맛집 (다이닝코드 평점 4.7)',
+    naverMap: 'https://map.naver.com/p/search/하하보리밥%20울산성안점',
+  },
+]
+
+export const menu = {
+  signature: {
+    name: '보리밥 정식',
+    price: '10,000',
+    subtitle: '2인 이상 주문',
+    includes: [
+      '갓 지은 보리밥',
+      '튀기듯 구운 갈치구이',
+      '돌판 불고기',
+      '진한 청국장',
+      '나물찬 5종',
+      '쌈채소 한상',
+    ],
+    image: '/images/signature-set.jpg',
+  },
+  others: [
+    {
+      name: '해물순두부',
+      price: '11,000',
+      desc: '깊고 시원한 국물에 가득 채운 해물',
+    },
+    { name: '갈치구이 추가', price: '5,000', desc: '대표 메뉴, 뼈까지 바삭하게' },
+    { name: '불고기 추가', price: '4,000', desc: '돌판 위에서 지글지글' },
+    { name: '봄동 겉절이', price: '5,000', desc: '계절 한정 · 비벼먹기 일품' },
+    { name: '공기밥', price: '1,500', desc: '갓 지은 보리밥' },
+    { name: '갈치구이 포장', price: '7,000', desc: '집에서도 즐기는 갈치' },
+    { name: '열무김치 포장', price: '6,000', desc: '아삭한 제철 열무김치' },
+  ],
+  freebie: {
+    label: '식후 숭늉 무한 리필',
+    text: '구수한 누룽지 숭늉으로 마무리. 손님들이 가장 많이 칭찬하는 디테일.',
+  },
+}
+
+export const pillars = [
+  {
+    icon: '🌿',
+    title: '자연에서 온 신선함',
+    text: '나물 다섯 가지를 매일 무쳐 올립니다. 인공 향미료 없이 재료 본연의 맛.',
+  },
+  {
+    icon: '🐟',
+    title: '튀기듯 구운 갈치',
+    text: '비싼 식재료지만 정식 안에 그대로. 뼈까지 바삭, 살은 촉촉.',
+  },
+  {
+    icon: '🍲',
+    title: '진한 청국장',
+    text: '오래 끓여낸 깊은 국물. 한 그릇이면 속이 든든.',
+  },
+  {
+    icon: '💰',
+    title: '만 원의 행복',
+    text: '갈치·불고기·청국장·쌈·나물찬까지 — 한 상에 만 원. 가성비의 정직함.',
+  },
+]
+
+export const reviews = [
+  {
+    rating: 5,
+    text:
+      '신선하고 건강하고 푸짐하고 막 다했습니다. 청국장에 불고기에 쌈채소에 나물에… 1인 만원이라는 착한가격, 사장님 상드려야 할 것 같아요. 재방문의사 10000000000%!',
+    author: '라니주부',
+    where: '네이버 · 양산 본점',
+    date: '2026.04.20',
+  },
+  {
+    rating: 5,
+    text:
+      '갈치, 불고기, 찌개 이 모든 것이 만원의 행복. 음식이 깔끔하고 가성비가 정말 좋아요.',
+    author: '쯔레',
+    where: '네이버 · 양산 본점',
+    date: '2025.05.18',
+  },
+  {
+    rating: 5,
+    text:
+      '보리알이 톡톡 터지는 식감이 일품. 청국장도 깊고 진해서 비빔밥이랑 궁합이 환상. 주차 편하고 별관 있는 게 진짜 큰 장점입니다.',
+    author: '자유분방35',
+    where: '네이버 · 양산 본점',
+    date: '2026.02.24',
+  },
+  {
+    rating: 5,
+    text:
+      '맛집인데도 여전히 친절하고, 여전히 청결하고, 여전히 정갈하고. 최애 맛집. 이런 곳 너무 좋아요.',
+    author: 'Bobbypic',
+    where: '네이버 · 양산 본점',
+    date: '2025.10.27',
+  },
+  {
+    rating: 5,
+    text:
+      '보리밥, 각종 나물, 불고기, 갈치구이, 된장찌개까지 이 모두가 만원이라니 가성비 아주 좋아요. 숭늉 리필 서비스에 주차장까지 있어 더 만족스러웠어요.',
+    author: '까만공주82',
+    where: '네이버 · 양산 본점',
+    date: '2025.09.21',
+  },
+  {
+    rating: 5,
+    text:
+      '나물도 듬뿍 쌈야채도 싱싱하고 갈치조림에 불고기까지 가성비가 진짜 쩝니다. 건강하고 푸짐한 상 잘 먹고 갑니다.',
+    author: '힐링 마렵',
+    where: '네이버 · 양산 본점',
+    date: '2025.11.30',
+  },
+  {
+    rating: 5,
+    text:
+      '음식이 맛있으면서, 신선, 깨끗하고, 푸짐한데 1만원이네요. 친절한 응대까지 해서 한 끼 대접 잘 받고 왔어요.',
+    author: 'mri***',
+    where: '네이버 · 양산 본점',
+    date: '2026.03.13',
+  },
+  {
+    rating: 5,
+    text:
+      '쌈순이인데 쌈 종류별로 다양하게 나와서 좋았어요. 리필 안 해도 될 만큼 푸짐하게 주십니다. 된장 넣고 나물 넣고 보리밥 비벼먹으면 꿀맛.',
+    author: 'su4866',
+    where: '네이버 · 양산 본점',
+    date: '2025.03.30',
+  },
+]
+
+export const gallery = [
+  { src: '/images/signature-set.jpg', alt: '하하보리밥 시그니처 한상' },
+  { src: '/images/banchan-1.jpg', alt: '정성스레 무친 나물찬 5종' },
+  { src: '/images/galchi.jpg', alt: '튀기듯 구운 갈치구이' },
+  { src: '/images/bulgogi.jpg', alt: '돌판 불고기' },
+  { src: '/images/ssam.jpg', alt: '제철 쌈채소와 묵' },
+  { src: '/images/banchan-2.jpg', alt: '신선한 나물 찬' },
+  { src: '/images/interior.jpg', alt: '깔끔한 매장 내부' },
+  { src: '/images/storefront.jpg', alt: '하하보리밥 매장 외관' },
+  { src: '/images/menu-board.jpg', alt: '하하보리밥 메뉴판' },
+]
+
+export const franchise = {
+  headline: '하하보리밥과 함께 시작하세요',
+  sub: '검증된 메뉴, 입증된 운영. 양산 본점에서 울산 가맹 1호점까지 이어진 자신감.',
+  reasons: [
+    {
+      title: '단순한 메뉴 구성',
+      text: '보리밥 정식과 해물순두부 두 축. 운영 부담은 낮고, 회전율은 높습니다.',
+    },
+    {
+      title: '검증된 가성비 컨셉',
+      text: '만 원 한상의 강력한 후킹. 지역 주민이 매일 찾는 단골 매출 구조.',
+    },
+    {
+      title: '위생·신뢰',
+      text: '식약처 위생등급 “우수·매우우수” 인증. 안심 운영의 기준.',
+    },
+    {
+      title: '본사 밀착 지원',
+      text: '레시피·재료수급·매장 운영 노하우 전수. 가맹 1호점에서 검증된 매뉴얼.',
+    },
+  ],
+  cta: {
+    label: '카카오톡으로 가맹문의',
+    href: 'https://pf.kakao.com/_haha_boribap',
+  },
+}

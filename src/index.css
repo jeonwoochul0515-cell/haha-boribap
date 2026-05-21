@@ -1,0 +1,61 @@
+/* Tailwind 베이스 및 전역 타이포그래피, 부드러운 스크롤 동작 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-boribap-ivory text-boribap-ink font-body antialiased;
+    font-family: 'Noto Sans KR', 'Pretendard', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Gowun Batang', 'Noto Sans KR', serif;
+    letter-spacing: -0.02em;
+  }
+  ::selection {
+    background: #5A3A1B;
+    color: #FBF6EC;
+  }
+}
+
+@layer components {
+  .container-edge {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+  .eyebrow {
+    @apply inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] text-boribap-ember uppercase;
+  }
+  .h-display {
+    @apply font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-boribap-cream text-boribap-earth text-xs sm:text-sm font-semibold px-3 py-1.5 ring-1 ring-boribap-barley/40;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-boribap-earth text-boribap-ivory text-base font-bold px-7 py-4 shadow-lg shadow-boribap-earth/30 transition hover:bg-boribap-ember hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-boribap-ivory/70 text-boribap-ivory font-semibold px-6 py-3 backdrop-blur-sm transition hover:bg-boribap-ivory hover:text-boribap-ink;
+  }
+  .grain {
+    background-image: radial-gradient(rgba(90,58,27,0.06) 1px, transparent 1px);
+    background-size: 6px 6px;
+  }
+}
+
+/* 스크롤바 디자인 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9B26A;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF6EC;
+}

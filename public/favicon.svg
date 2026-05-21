@@ -1,0 +1,8 @@
+<!-- 하하보리밥 브랜드 마크 - 따뜻한 흙색 배경 위 한글 "하" -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#5A3A1B"/>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+        font-family="'Gowun Batang','Noto Sans KR',serif" font-weight="700"
+        font-size="34" fill="#F3E9D2">하</text>
+  <circle cx="48" cy="48" r="4" fill="#D9B26A"/>
+</svg>
