@@ -55,7 +55,8 @@ export default function Nav() {
         <button
           className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg"
           onClick={() => setOpen((v) => !v)}
-          aria-label="메뉴 열기"
+          aria-label={open ? '메뉴 닫기' : '메뉴 열기'}
+          aria-expanded={open}
         >
           <svg
             width="24"

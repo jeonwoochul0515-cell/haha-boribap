@@ -7,6 +7,7 @@ import WhyHaha from './sections/WhyHaha.jsx'
 import Gallery from './sections/Gallery.jsx'
 import Reviews from './sections/Reviews.jsx'
 import Stores from './sections/Stores.jsx'
+import Faq from './sections/Faq.jsx'
 import Franchise from './sections/Franchise.jsx'
 import Footer from './sections/Footer.jsx'
 
@@ -22,6 +23,7 @@ export default function App() {
         <Gallery />
         <Reviews />
         <Stores />
+        <Faq />
         <Franchise />
       </main>
       <Footer />

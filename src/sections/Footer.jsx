@@ -24,6 +24,7 @@ export default function Footer() {
               <li><a href="#menu" className="hover:text-boribap-ivory">메뉴</a></li>
               <li><a href="#why" className="hover:text-boribap-ivory">왜 하하보리밥</a></li>
               <li><a href="#gallery" className="hover:text-boribap-ivory">갤러리</a></li>
+              <li><a href="#faq" className="hover:text-boribap-ivory">자주 묻는 질문</a></li>
               <li><a href="#franchise" className="hover:text-boribap-ivory">가맹문의</a></li>
             </ul>
           </div>
