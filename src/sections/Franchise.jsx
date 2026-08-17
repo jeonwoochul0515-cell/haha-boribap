@@ -8,7 +8,7 @@ export default function Franchise() {
     <section id="franchise" className="relative py-24 sm:py-36 overflow-hidden text-boribap-ivory">
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{ backgroundImage: 'url(/images/signature-set.jpg)' }}
+        style={{ backgroundImage: 'url(/images/signature-set.webp)' }}
         aria-hidden
       />
       <div className="absolute inset-0 bg-gradient-to-b from-boribap-ink/95 via-boribap-earth/90 to-boribap-ink/95" aria-hidden />

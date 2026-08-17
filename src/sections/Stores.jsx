@@ -5,7 +5,7 @@ import useReveal from '../lib/useReveal.js'
 
 function StoreCard({ s, i }) {
   const [ref, visible] = useReveal()
-  const bg = i === 0 ? '/images/storefront.jpg' : '/images/interior.jpg'
+  const bg = i === 0 ? '/images/storefront.webp' : '/images/interior.webp'
   return (
     <article
       ref={ref}

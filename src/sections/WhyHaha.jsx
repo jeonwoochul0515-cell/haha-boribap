@@ -9,7 +9,7 @@ export default function WhyHaha() {
     <section id="why" className="relative py-24 sm:py-36 overflow-hidden text-boribap-ivory">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/banchan-1.jpg)' }}
+        style={{ backgroundImage: 'url(/images/banchan-1.webp)' }}
         aria-hidden
       />
       <div className="absolute inset-0 bg-boribap-ink/85" aria-hidden />

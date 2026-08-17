@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
-        style={{ backgroundImage: 'url(/images/hero-spread.png)' }}
+        style={{ backgroundImage: 'url(/images/hero-spread.webp)' }}
         aria-hidden
       />
       <div className="absolute inset-0 bg-gradient-to-b from-boribap-ink/85 via-boribap-ink/45 to-boribap-ink/95" aria-hidden />

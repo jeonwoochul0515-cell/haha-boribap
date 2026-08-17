@@ -73,7 +73,7 @@ export const menu = {
       '나물찬 5종',
       '쌈채소 한상',
     ],
-    image: '/images/signature-set.jpg',
+    image: '/images/signature-set.webp',
   },
   others: [
     {
@@ -185,15 +185,38 @@ export const reviews = [
 ]
 
 export const gallery = [
-  { src: '/images/signature-set.jpg', alt: '하하보리밥 시그니처 한상' },
-  { src: '/images/banchan-1.jpg', alt: '정성스레 무친 나물찬 5종' },
-  { src: '/images/galchi.jpg', alt: '튀기듯 구운 갈치구이' },
-  { src: '/images/bulgogi.jpg', alt: '돌판 불고기' },
-  { src: '/images/ssam.jpg', alt: '제철 쌈채소와 묵' },
-  { src: '/images/banchan-2.jpg', alt: '신선한 나물 찬' },
-  { src: '/images/interior.jpg', alt: '깔끔한 매장 내부' },
-  { src: '/images/storefront.jpg', alt: '하하보리밥 매장 외관' },
-  { src: '/images/menu-board.jpg', alt: '하하보리밥 메뉴판' },
+  { src: '/images/signature-set.webp', alt: '하하보리밥 시그니처 한상' },
+  { src: '/images/banchan-1.webp', alt: '정성스레 무친 나물찬 5종' },
+  { src: '/images/galchi.webp', alt: '튀기듯 구운 갈치구이' },
+  { src: '/images/bulgogi.webp', alt: '돌판 불고기' },
+  { src: '/images/ssam.webp', alt: '제철 쌈채소와 묵' },
+  { src: '/images/banchan-2.webp', alt: '신선한 나물 찬' },
+  { src: '/images/interior.webp', alt: '깔끔한 매장 내부' },
+  { src: '/images/storefront.webp', alt: '하하보리밥 매장 외관' },
+  { src: '/images/menu-board.webp', alt: '하하보리밥 메뉴판' },
+]
+
+export const faq = [
+  {
+    q: '보리밥 정식은 얼마인가요?',
+    a: '1인 10,000원이며 2인 이상 주문 메뉴입니다. 갓 지은 보리밥, 튀기듯 구운 갈치구이, 돌판 불고기, 진한 청국장, 나물찬 5종, 쌈채소가 한 상에 나옵니다.',
+  },
+  {
+    q: '영업시간과 브레이크타임은 어떻게 되나요?',
+    a: '양산 본점은 매일 11:00–20:00 영업하며 평일 15:00–17:00는 브레이크타임입니다(라스트오더 19:30). 울산성안점은 11:00–20:00 영업하며 평일 브레이크 14:30–17:00, 주말 브레이크 14:30–15:30, 수요일은 11:00–15:00만 영업합니다.',
+  },
+  {
+    q: '주차할 수 있나요?',
+    a: '양산 본점은 무료 전용 주차장이 있고, 울산성안점도 주차가 가능합니다.',
+  },
+  {
+    q: '포장 메뉴도 있나요?',
+    a: '갈치구이 포장(7,000원)과 열무김치 포장(6,000원)이 준비되어 있습니다. 그 외 메뉴의 포장 가능 여부는 매장에 전화로 확인해 주세요.',
+  },
+  {
+    q: '가맹 문의는 어떻게 하나요?',
+    a: '카카오톡 채널로 문의하시거나 본사(055-381-0316)로 전화 주시면 됩니다. 예상 위치, 평수, 운영 형태를 알려주시면 빠르게 회신드립니다.',
+  },
 ]
 
 export const franchise = {

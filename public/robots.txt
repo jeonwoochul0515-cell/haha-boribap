@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+# 네이버 검색로봇(Yeti) 명시 허용
+User-agent: Yeti
+Allow: /
+
+# AI 검색/응답 크롤러 허용 (AI 답변 인용 대상 유지)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://haha-boribap.pages.dev/sitemap.xml
