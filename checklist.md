@@ -20,6 +20,17 @@
 - [x] `npm run build` 통과 (280KB JS, 28KB CSS, 1.64s)
 - [x] 배포 가이드 README
 
+## 2026-08-17 개선 작업 (리스캔 후)
+- [x] 이미지 전체 WebP 변환 (총 5.3MB → 2.1MB, 히어로 1.8MB → 177KB)
+- [x] OG 공유 이미지 1200×630 `og.jpg` 생성 + 절대 URL로 교체
+- [x] canonical, og:url, twitter card 메타 추가
+- [x] JSON-LD 구조화 데이터 (Organization + Restaurant×2 + FAQPage)
+- [x] `sitemap.xml` 생성 (robots.txt가 가리키던 파일이 실제로 없었음)
+- [x] robots.txt 보강 (Yeti·AI 검색봇 허용, Sitemap 절대 URL)
+- [x] FAQ 섹션 신설 (5문항, 아코디언) + 푸터 링크
+- [x] 햄버거 버튼 접근성 (aria-expanded, 동적 라벨)
+- [x] 빌드·프리뷰 렌더링 검증 후 재배포
+
 ## 사용자가 배포 전에 해야 할 일
 - [ ] `src/data/site.js`의 `kakaoChannel` / `franchise.cta.href` → 실제 카카오톡 채널 URL
 - [ ] (선택) `index.html`의 `og:image`를 도메인 절대 URL로

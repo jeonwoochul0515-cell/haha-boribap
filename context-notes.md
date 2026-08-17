@@ -57,6 +57,14 @@
 - **다국어** — 향후 확장 가능.
 - **백엔드** — 없음. 100% 정적.
 
+## 2026-08-17 개선 작업 결정 사항
+- **이미지 WebP 일원화**: 원본 jpg/png는 git 히스토리에 남기고 삭제. 최대 변 1400px, 품질 80. `og.jpg`(1200×630, signature-set에서 크롭)만 JPG 유지 — 공유 스크래퍼 호환 목적.
+- **JSON-LD는 index.html에 정적으로**: SPA라 JS 렌더 전에 크롤러가 읽도록 head에 직접 삽입. FAQ 화면(site.js `faq`)과 FAQPage 스키마는 **수동 1:1 동기화** — FAQ 문구 수정 시 index.html도 같이 고칠 것.
+- **canonical/OG/사이트맵 기준 URL = `https://haha-boribap.pages.dev`**: 커스텀 도메인 연결 시 index.html(canonical·og:url·og:image·JSON-LD 전체), sitemap.xml, robots.txt의 URL을 일괄 치환해야 함.
+- **FAQ 위치**: Stores와 Franchise 사이. 네비게이션에는 추가 안 함(이미 7개), 푸터 빠른 링크에만 추가.
+- **배포 방식**: Cloudflare Pages 직접 업로드 (`npx wrangler pages deploy dist --project-name haha-boribap`). Git 연동 아님 — push만으로는 배포 안 됨.
+- 전체 스크린샷에서 중간 섹션이 빈 것은 useReveal(스크롤 등장 애니메이션) 때문으로 헤드리스 캡처의 한계. 실사용·크롤러(DOM 텍스트)에는 문제 없음.
+
 ## 빌드 검증 결과
 - `npm run build` 통과, 1.64초
 - dist/index.html 1.51 KB
