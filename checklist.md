@@ -30,10 +30,11 @@
 - [x] FAQ 섹션 신설 (5문항, 아코디언) + 푸터 링크
 - [x] 햄버거 버튼 접근성 (aria-expanded, 동적 라벨)
 - [x] 빌드·프리뷰 렌더링 검증 후 재배포
+- [x] 카카오 채널 CTA 제거 (placeholder URL이라 빈 곳으로 연결됐음) → 본사 전화 CTA로 일원화
 
 ## 사용자가 배포 전에 해야 할 일
-- [ ] `src/data/site.js`의 `kakaoChannel` / `franchise.cta.href` → 실제 카카오톡 채널 URL
-- [ ] (선택) `index.html`의 `og:image`를 도메인 절대 URL로
+- [x] ~~카카오톡 채널 URL 교체~~ → 2026-08-17 카카오 채널 CTA 제거, 전화 문의로 일원화
+- [x] `index.html`의 `og:image` 절대 URL (2026-08-17 완료)
 - [ ] (선택) 실제 사진 추가/교체 시 `public/images/` 같은 파일명으로 덮어쓰기
 - [ ] GitHub 저장소 생성 후 push
 - [ ] Cloudflare Pages 프로젝트 생성 (build=`npm run build`, output=`dist`)

@@ -1,5 +1,5 @@
-// 가맹문의 섹션 - 사이트 핵심 전환 포인트. 카카오톡 채널로 연결되는 CTA 배치
-import { franchise, brand } from '../data/site.js'
+// 가맹문의 섹션 - 사이트 핵심 전환 포인트. 본사 전화로 연결되는 CTA 배치
+import { franchise } from '../data/site.js'
 import useReveal from '../lib/useReveal.js'
 
 export default function Franchise() {
@@ -51,28 +51,18 @@ export default function Franchise() {
             <div className="lg:col-span-7">
               <span className="eyebrow">가맹 상담</span>
               <h3 className="font-display font-bold text-2xl sm:text-3xl mt-3 text-boribap-earth">
-                카카오톡 채널로 편하게 문의 주세요.
+                전화 한 통으로 편하게 문의 주세요.
               </h3>
               <p className="mt-3 text-boribap-ink/75 leading-relaxed">
                 예상 위치, 평수, 운영 형태만 알려주시면 본사에서 빠르게 회신드립니다.
-                대표 번호로 전화도 가능합니다.
               </p>
             </div>
             <div className="lg:col-span-5 grid gap-3">
               <a
                 href={franchise.cta.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 rounded-2xl bg-[#FEE500] text-[#181600] font-bold px-7 py-5 text-lg shadow-lg hover:-translate-y-0.5 transition"
+                className="inline-flex items-center justify-center gap-3 rounded-2xl bg-boribap-earth text-boribap-ivory font-bold px-7 py-5 text-lg shadow-lg hover:bg-boribap-ember hover:-translate-y-0.5 transition"
               >
-                <KakaoIcon />
-                {franchise.cta.label}
-              </a>
-              <a
-                href="tel:055-381-0316"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-boribap-earth text-boribap-ivory font-bold px-7 py-4 hover:bg-boribap-ember transition"
-              >
-                📞 본사 055-381-0316
+                📞 {franchise.cta.label}
               </a>
               <p className="text-xs text-boribap-ink/55 text-center">
                 상담 가능 시간 · 11:00 – 20:00 (브레이크 15:00–17:00)
@@ -82,13 +72,5 @@ export default function Franchise() {
         </div>
       </div>
     </section>
-  )
-}
-
-function KakaoIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M12 3C6.5 3 2 6.55 2 10.93c0 2.82 1.85 5.3 4.65 6.74l-.95 3.49c-.09.32.27.58.55.39l4.18-2.78c.51.05 1.03.08 1.57.08 5.5 0 10-3.55 10-7.92S17.5 3 12 3z"/>
-    </svg>
   )
 }

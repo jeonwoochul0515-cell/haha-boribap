@@ -5,7 +5,6 @@ export const brand = {
   conceptLine: '만원에 가장 푸짐하고 행복한 한상',
   description:
     '자연에서 온 신선한 나물과 갓 지은 보리밥, 따끈한 청국장과 갈치구이까지. 정성껏 차려낸 한상으로 마음까지 든든해지는 자리.',
-  kakaoChannel: 'https://pf.kakao.com/_haha_boribap',
   aiSummary: '대기할 만한 가치가 있는 보리밥 명소',
 }
 
@@ -215,7 +214,7 @@ export const faq = [
   },
   {
     q: '가맹 문의는 어떻게 하나요?',
-    a: '카카오톡 채널로 문의하시거나 본사(055-381-0316)로 전화 주시면 됩니다. 예상 위치, 평수, 운영 형태를 알려주시면 빠르게 회신드립니다.',
+    a: '본사(055-381-0316)로 전화 주시면 됩니다. 예상 위치, 평수, 운영 형태를 알려주시면 빠르게 회신드립니다.',
   },
 ]
 
@@ -241,7 +240,7 @@ export const franchise = {
     },
   ],
   cta: {
-    label: '카카오톡으로 가맹문의',
-    href: 'https://pf.kakao.com/_haha_boribap',
+    label: '본사 055-381-0316',
+    href: 'tel:055-381-0316',
   },
 }

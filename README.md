@@ -46,26 +46,15 @@ npm run preview    # 빌드 결과 로컬 미리보기 (http://localhost:4173)
 5. **Gallery** – 음식·매장·메뉴판 9장 그리드
 6. **Reviews** – 네이버/다이닝코드/식신 실제 후기
 7. **Stores** – 양산 본점 + 울산 가맹 1호점
-8. **Franchise** – 가맹문의 (카카오톡 채널 CTA)
-9. **Footer** – 빠른 링크 + 매장 요약
+8. **FAQ** – 자주 묻는 질문 5문항 (FAQPage JSON-LD와 1:1)
+9. **Franchise** – 가맹문의 (본사 전화 CTA)
+10. **Footer** – 빠른 링크 + 매장 요약
 
 ## 배포 전 체크리스트
 
-### 카카오톡 채널 연결
-`src/data/site.js`의 `brand.kakaoChannel`과 `franchise.cta.href`를
-실제 카카오톡 채널 URL로 교체.
-
-```js
-// 예시
-kakaoChannel: 'https://pf.kakao.com/_여러분의채널코드'
-```
-
 ### OG 이미지 절대 URL
-Cloudflare 도메인이 정해지면 `index.html`의 `og:image`를 절대 URL로 변경.
-
-```html
-<meta property="og:image" content="https://하하보리밥.도메인/images/hero-spread.png" />
-```
+커스텀 도메인이 정해지면 `index.html`의 canonical·og:url·og:image·JSON-LD와
+`public/sitemap.xml`·`public/robots.txt`의 `haha-boribap.pages.dev`를 새 도메인으로 일괄 치환.
 
 ## GitHub + Cloudflare Pages 배포 가이드
 

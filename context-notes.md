@@ -38,7 +38,7 @@
 - **TailwindCSS** — 빠른 디자인 시스템 구축. `boribap-*` 컬러 토큰화.
 - **Framer Motion** — Hero 인트로 모션. 다른 섹션은 IntersectionObserver 훅으로 직접 처리해 번들 절약.
 - **단일 페이지**(SPA 라우팅 X) — anchor 스크롤만 사용. Cloudflare Pages에 SPA fallback 불필요.
-- **카카오톡 채널 CTA** — 사용자 요청에 따라 가맹문의 폼 대신 카카오 채널로 연결. placeholder URL이라 실제 채널 URL로 교체 필요.
+- **가맹문의 CTA = 본사 전화(055-381-0316)** — 처음엔 카카오 채널 연결이었으나 placeholder URL 상태로 방치되어 2026-08-17 사용자 지시로 완전 제거. 실제 채널이 생기면 그때 다시 붙일 것.
 
 ## 컬러 팔레트
 - `boribap-ivory #FBF6EC` — 배경
@@ -52,7 +52,7 @@
 
 ## 안 한 것 / 안 하기로 한 것
 - **Instagram / TikTok 스크래핑** — API 없이 불가, Naver Place도 차단. 사용자가 직접 제공한 사진만 사용.
-- **가맹문의 폼** — 사용자가 카카오톡 채널로 처리하기로 결정. Cloudflare Functions 추가 작업 안 함.
+- **가맹문의 폼** — 폼 없이 전화 문의로 처리. Cloudflare Functions 추가 작업 안 함. (카카오 채널도 2026-08-17 제거)
 - **TypeScript** — 단순성 우선, 변환 부담 회피.
 - **다국어** — 향후 확장 가능.
 - **백엔드** — 없음. 100% 정적.
